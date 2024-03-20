@@ -1,0 +1,103 @@
+"use client";
+import Image from "next/image";
+import { MdContactMail } from "react-icons/md";
+import { IoMdDownload } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import myImage from "@/public/Untitled.jpeg";
+import { motion } from "framer-motion";
+import Link from "next/link";
+export default function Intro() {
+  return (
+    <main className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28">
+      {/*parent container*/}
+      <motion.section // child  1
+        className="relative"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          type: "tween", //this is the boucy effect of the component. Tween doesn't bounce but just renders smoothly,think of it like opposite ot spring effect
+          duration: 0.2,
+        }}
+      >
+        <Image //it is the nextjs component that is better than the traditional img tag
+          src={myImage}
+          alt="Prajwal Gowda G"
+          quality="95"
+          priority={true}
+          className="w-24 h-24 border-[0.2rem] object-cover rounded-full border-violet-800 shadow-lg"
+        />
+        <motion.span
+          className="absolute bottom-0 right-0 text-2xl"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 130, //as the name says the stiffness  effect can be seen
+            delay: 0.2, // it is the delay of rendernig of the component on the screen
+            duration: 0.4, // it is the amount of time is will take to complete it's rendering from start to finish
+          }}
+        >
+          👋
+        </motion.span>
+      </motion.section>
+      <motion.h1 // child 2
+        className="flex flex-col items-center text-2xl sm:text-4xl !leading-[2.5rem]"
+        initial={{ y: 40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
+        <span>
+          Hi, I&apos;m <b>Prajwal</b>. I&apos;m a{" "}
+          <b>Computer science undergraduate</b>.
+        </span>
+        <p>
+          I love to program in <b>Java </b>&amp; <b>TypeScript</b>. <br></br>My
+          stack is{" "}
+          <i>
+            <b>MERN</b>
+          </i>
+        </p>
+      </motion.h1>
+      <motion.section //child 3
+        className="flex flex-col items-center w-full text-center smw-auto sm:justify-center sm:flex-row gap-6"
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.125 }}
+      >
+        <Link
+          href="#contact"
+          className="flex items-center justify-center w-3/4 px-10 py-4 text-lg font-semibold text-white bg-gray-900 rounded-full shadow-lg sm:w-auto gap-3 hover:scale-110 active:scale-105 transition ease-in-out whitespace-nowrap"
+        >
+          <div>Contact me</div>
+          <MdContactMail className="text-2xl " />
+        </Link>
+
+        <a
+          className="flex items-center justify-center w-3/4 px-10 py-4 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap"
+          href="/prajwalgowdag.pdf"
+          download={true} // downloads the file instead of just opening the file in the window
+          // the slash "/" in nextjs just points to the public directory as it is generally used to store static files
+        >
+          <div>Download Resume</div>
+          <IoMdDownload className="text-2xl opacity-60 group-hover:translate-y-1 transition " />
+        </a>
+
+        <a
+          className="w-3/4  flex items-center justify-center sm:w-auto p-4  bg-white border rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10"
+          href=""
+          target="_blank"
+        >
+          <FaLinkedin className="text-2xl " />
+        </a>
+
+        <a
+          className="p-4 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 "
+          href="https://github.com/Prajwalg19"
+          target="_blank"
+        >
+          <FaGithub className="text-2xl" />
+        </a>
+      </motion.section>
+    </main>
+  );
+}

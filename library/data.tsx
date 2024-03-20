@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import Resource from "@/public/Resource.png";
+import Realtor from "@/public/Realtor.png";
+import Estate from "@/public/MERN_RE.png";
+import Cart from "@/public/Cart.png";
 
 export const links = [
   {
@@ -46,25 +47,37 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Mern Estate Website",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    // imageUrl: corpcommentImg,
+      "A Real Estate website where people can find there home. I worked on this full-stack project for 3 months.",
+    tags: [
+      "React",
+      "Express",
+      "MongoDB",
+      "TailwindCSS",
+      "Node",
+      "Redux Toolkit",
+    ],
+    image: Estate,
   },
   {
-    title: "rmtDev",
+    title: "Realtor clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    // imageUrl: rmtdevImg,
+      "This is a realtor clone that is a house listing website. Website build using firebase a Baas (Backend As A Service)",
+    tags: ["React", "TailwindCSS", "Firebase"],
+    image: Realtor,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl: wordanalyticsImg,
+    title: "AI Powered Resource Management System",
+    description: "A resource Management website that integrates AI into it.",
+    tags: ["React", "Redux", "DBSqlite", "TailwindCSS", "Redux Toolkit"],
+    image: Resource,
+  },
+  {
+    title: "Checkout cart",
+    description: "Checkout cart page implemented using redux toolkit",
+    tags: ["React", "Redux Toolkit", "TailwindCSS"],
+    image: Cart,
   },
 ] as const;
 

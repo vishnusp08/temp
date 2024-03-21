@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 export default function Intro() {
   return (
-    <main className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28">
+    <main
+      className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28 scroll-mt-36" //When you navigate to a specific element on a page using a URL fragment (e.g., #section2), the browser scrolls the target element to the top of the viewport. However, if there's a fixed header or you want to add some space between the top of the viewport and the target element, you can use scroll-margin-top to achieve this.
+      id="home"
+    >
       {/*parent container*/}
       <motion.section // child  1
         className="relative"

@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 type SomeType = {
   children: React.ReactNode;
 };
@@ -5,6 +7,12 @@ type SomeType = {
 // render hence called react node
 export default function Section_headers({ children }: SomeType) {
   return (
-    <h1 className="mb-10 text-3xl font-semibold text-center">{children}</h1>
+    <motion.h1
+      className="mb-10 text-3xl font-semibold text-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      {children}
+    </motion.h1>
   );
 }

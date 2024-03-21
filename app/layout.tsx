@@ -15,7 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
+      {/* this scroll smooth adds a smooth scrolling when the in page url is accessed using the id */}
+      {/*the exlamation mark forces the property to be overriden in tailwind utility classes*/}
       <body
         className={`${inter.className} relative bg-slate-50 sm:pt-[10rem] pt-[7rem]`}
       >

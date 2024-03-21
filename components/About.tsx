@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.main
-      className="w-full max-w-5xl mx-auto mb-28 sm:mb-0"
+      id="about" // when i add  an id equal to the route the routes points to this section of the page
+      className="w-full max-w-5xl mx-auto mb-28 sm:mb-0 scroll-mt-36"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.15 }}

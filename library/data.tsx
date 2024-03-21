@@ -50,34 +50,30 @@ export const projectsData = [
     title: "Mern Estate Website",
     description:
       "A Real Estate website where people can find there home. I worked on this full-stack project for 3 months.",
-    tags: [
-      "React",
-      "Express",
-      "MongoDB",
-      "TailwindCSS",
-      "Node",
-      "Redux Toolkit",
-    ],
+    tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
     image: Estate,
+    URL: "https://estate-lake.vercel.app/",
   },
   {
     title: "Realtor clone",
-    description:
-      "This is a realtor clone that is a house listing website. Website build using firebase a Baas (Backend As A Service)",
-    tags: ["React", "TailwindCSS", "Firebase"],
+    description: "This is a realtor clone that is a house listing website.",
+    tags: ["React", "Tailwind", "Firebase"],
     image: Realtor,
-  },
-  {
-    title: "AI Powered Resource Management System",
-    description: "A resource Management website that integrates AI into it.",
-    tags: ["React", "Redux", "DBSqlite", "TailwindCSS", "Redux Toolkit"],
-    image: Resource,
+    URL: "https://website-clone-chi.vercel.app/",
   },
   {
     title: "Checkout cart",
     description: "Checkout cart page implemented using redux toolkit",
-    tags: ["React", "Redux Toolkit", "TailwindCSS"],
+    tags: ["React", "Redux Toolkit", "Tailwind"],
     image: Cart,
+    URL: "https://redux-toolkit-cart-sigma.vercel.app/",
+  },
+  {
+    title: "AI Powered Resource Management System",
+    description: "A resource Management website that integrates AI into it.",
+    tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
+    image: Resource,
+    URL: "",
   },
 ] as const;
 
@@ -88,7 +84,7 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
-  "TailwindCSS",
+  "Tailwind",
   "MongoDB",
   "Redux",
   "Express",

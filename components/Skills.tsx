@@ -1,17 +1,16 @@
 "use client";
-import {skillsData} from "@/library/data";
+import { skillsData } from "@/library/data";
 import Section_headers from "@/components/Section_headers";
-import {useEffect} from "react";
-import {ContextData} from "@/context/activeContext";
-import {useInView} from "react-intersection-observer";
+import { useSectionInview } from "@/library/customHooks";
 export default function Skills() {
-    const [ref, inView] = useInView({
-        threshold: 0.9,
-    });
-    const {setActiveState, timeOfLastClick} = ContextData();
-    useEffect(() => {
-        if (inView && Date.now() - timeOfLastClick > 1000) setActiveState("#skills");
-    }, [inView, setActiveState, timeOfLastClick]);
+    const ref = useSectionInview({ thres: 0.9, sectionTag: "#skills" });
+    // const [ref, inView] = useInView({
+    //     threshold: 0.9,
+    // });
+    // const {setActiveState, timeOfLastClick} = ContextData();
+    // useEffect(() => {
+    //     if (inView && Date.now() - timeOfLastClick > 1000) setActiveState("#skills");
+    // }, [inView, setActiveState, timeOfLastClick]);
     return (
         <main id="skills" className="scroll-mt-36" ref={ref}>
             <Section_headers>Skills</Section_headers>

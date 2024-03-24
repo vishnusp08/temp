@@ -7,18 +7,9 @@ import { FaGithub } from "react-icons/fa";
 import myImage from "@/public/Untitled.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ContextData } from "@/context/activeContext";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useSectionInview } from "@/library/customHooks";
 export default function Intro() {
-    const { setActiveState, timeOfLastClick } = ContextData();
-    const [ref, inView] = useInView({
-        threshold: 0.4,
-    });
-    useEffect(() => {
-        if (inView && Date.now() - timeOfLastClick > 1000) setActiveState("#home");
-    }, [inView, setActiveState]);
-
+    const ref = useSectionInview({ thres: 0.4, sectionTag: "#home" });
     return (
         <main
             className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28 scroll-mt-36" //When you navigate to a specific element on a page using a URL fragment (e.g., #section2), the browser scrolls the target element to the top of the viewport. However, if there's a fixed header or you want to add some space between the top of the viewport and the target element, you can use scroll-margin-top to achieve this.

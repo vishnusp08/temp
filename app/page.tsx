@@ -13,6 +13,7 @@ export default function Home() {
             <Projects />
             <Section />
             <Skills />
+            <Section />
         </main>
     );
 }

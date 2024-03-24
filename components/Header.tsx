@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <motion.header className="shadow-lg fixed left-1/2 sm:top-[2rem] top-0 sm:w-[40rem] bg-white w-full sm:rounded-full z-[100]" initial={{ y: -110, x: "-50%", opacity: 0 }} animate={{ y: 3, x: "-50%", opacity: 0.937 }}>
-            <ul className="flex flex-wrap items-center justify-around w-full h-auto p-2 font-semibold transition-all sm:p-0 sm:h-14 box-border">
+            <ul className="flex flex-wrap items-center justify-around w-full h-auto p-1 font-semibold transition-all sm:p-0 sm:h-14 box-border">
                 {links.map((item) => (
                     <Link
                         key={item.hash}

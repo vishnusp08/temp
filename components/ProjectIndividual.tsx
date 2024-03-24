@@ -25,7 +25,7 @@ export default function Project({ title, description, tags, image, URL }: Projec
             target="_blank"
             className={`cursor-pointer hover:bg-gray-200 group relative flex h-[22rem] sm:h-[20rem] w-full bg-slate-100 p-3 overflow-hidden rounded-lg sm:mb-6 mb-8 border border-black/5 last:mb-0`}
         >
-            <section className="flex flex-col w-1/2 h-full pt-4 group-odd:pl-4 group-even:ml-[14rem] sm:group-even:ml-[22rem] pb-7 ">
+            <section className="flex flex-col w-full sm:w-1/2 h-full pt-4 group-odd:pl-4  sm:group-even:ml-[22rem] pb-7 ">
                 <span className="mb-5 text-2xl font-semibold">{title}</span>
                 <span className="mb-10 text-gray-700">{description}</span>
                 <ul className="flex flex-wrap items-center mt-auto gap-3">
@@ -40,7 +40,7 @@ export default function Project({ title, description, tags, image, URL }: Projec
                 src={image}
                 alt={title}
                 quality="90"
-                className="group-hover:shadow-2xl group-even:right-0 group-even:left-[-20px] group-even:group-hover:translate-x-2 group-even:group-hover:translate-y-2 group-even:group-hover:rotate-2  group-hover:-rotate-1 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:scale-[1.05] transition absolute top-10 right-[-20px] object-cover h-[20rem] w-[13rem] sm:w-[20rem] rounded-2xl shadow-lg"
+                className="hidden sm:block group-hover:shadow-2xl group-even:right-0 group-even:left-[-20px] group-even:group-hover:translate-x-2 group-even:group-hover:translate-y-2 group-even:group-hover:rotate-2  group-hover:-rotate-1 group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:scale-[1.05] transition absolute top-10 right-[-20px] object-cover h-[20rem] w-[13rem] sm:w-[20rem] rounded-2xl shadow-lg"
             />
         </motion.a>
     );

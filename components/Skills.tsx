@@ -1,8 +1,8 @@
 "use client";
-import {skillsData} from "@/library/data";
+import { skillsData } from "@/library/data";
 import Section_headers from "@/components/Section_headers";
-import {useSectionInview} from "@/library/customHooks";
-import {motion} from "framer-motion";
+import { useSectionInview } from "@/library/customHooks";
+import { motion } from "framer-motion";
 const framerAnimations = {
     kaka: {
         opacity: 0,
@@ -15,7 +15,7 @@ const framerAnimations = {
 };
 
 export default function Skills() {
-    const {ref} = useSectionInview({thres: 0.9, sectionTag: "#skills"});
+    const { ref } = useSectionInview({ thres: 0.9, sectionTag: "#skills" });
     // const [ref, inView] = useInView({
     //     threshold: 0.9,
     // });
@@ -30,7 +30,7 @@ export default function Skills() {
                 {skillsData.map((item, index) => (
                     <motion.li
                         key={item}
-                        className="px-3 py-2 tracking-widest border shadow-md rounded-md bg-slate-50 border-black/10"
+                        className="px-4 py-3 tracking-widest sm:text-lg text-base border shadow-md rounded-md bg-slate-50 border-black/10 dark:bg-slate-800"
                         transition={{
                             delay: index * 0.05,
                         }}

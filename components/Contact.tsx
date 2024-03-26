@@ -31,9 +31,9 @@ export default function Contact() {
                     </a>{" "}
                     or through this form
                 </p>
-                <input type="email" required maxLength={100} placeholder="Your email" className="p-3  rounded-md border border-black/10" name="email" />
-                <textarea placeholder="Your message" required className="h-[11rem] p-3 rounded-md border-black/10 border" name="message"></textarea>
-                <p className="w-full flex justify-center items-center">
+                <input type="email" required maxLength={100} placeholder="Your email" className="p-3  rounded-md border border-black/10 dark:bg-neutral-200 dark:focus:bg-white text-black" name="email" />
+                <textarea placeholder="Your message" required className="text-black h-[11rem] p-3 rounded-md border-black/10 border dark:bg-neutral-200 dark:focus:bg-white" name="message"></textarea>
+                <p className=" w-full flex justify-center items-center">
                     <Btn />
                 </p>
             </form>

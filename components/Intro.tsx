@@ -2,9 +2,10 @@
 import Image from "next/image";
 import { MdContactMail } from "react-icons/md";
 import { IoMdDownload } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import myImage from "@/public/Untitled.jpeg";
+import { SiLeetcode } from "react-icons/si";
+import myImage from "@/public/My_photo.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useSectionInview } from "@/library/customHooks";
@@ -60,7 +61,7 @@ export default function Intro() {
                 <p>
                     I love to program in <b>Java </b>&amp; <b>TypeScript</b>. <br></br>My stack is{" "}
                     <i>
-                        <b>MERN</b>
+                        <b>MERN(Next.js)</b>
                     </i>
                 </p>
             </motion.h1>
@@ -83,7 +84,7 @@ export default function Intro() {
                 </Link>
 
                 <a
-                    className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap"
+                    className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap dark:bg-opacity-30 dark:backdrop-blur-[0.5rem] dark:text-gray-200"
                     href="/prajwalgowdag.pdf"
                     download={true} // downloads the file instead of just opening the file in the window
                     // the slash "/" in nextjs just points to the public directory as it is generally used to store static files
@@ -92,12 +93,21 @@ export default function Intro() {
                     <IoMdDownload className="text-2xl opacity-60 group-hover:translate-y-1 transition " />
                 </a>
 
-                <a className="w-3/4  flex items-center justify-center sm:w-auto p-3  bg-white border rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10" href="" target="_blank">
-                    <FaLinkedin className="text-2xl " />
-                </a>
+                {
+                    // <a className="w-3/4  flex items-center justify-center sm:w-auto p-3  bg-white border rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 dark:bg-white/[.25] backdrop-blur-[0.5]" href="" target="_blank">
+                    // <FaLinkedin className="text-2xl " />
+                    // </a>
+                }
 
-                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 " href="https://github.com/Prajwalg19" target="_blank">
-                    <FaGithub className="text-2xl" />
+                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 backdrop-blur-[0.5rem] bg-opacity-30 " href="https://github.com/Prajwalg19" target="_blank">
+                    <FaGithub className="text-2xl dark:text-white" />
+                </a>
+                <a
+                    className="w-3/4  flex items-center justify-center sm:w-auto p-3  bg-white border rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 dark:bg-white/[.25] backdrop-blur-[0.5]"
+                    href="https://leetcode.com/theimperical8/"
+                    target="_blank"
+                >
+                    <SiLeetcode className="text-2xl " />
                 </a>
             </motion.section>
         </main>

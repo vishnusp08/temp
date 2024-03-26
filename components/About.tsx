@@ -3,7 +3,7 @@ import Section_headers from "@/components/Section_headers";
 import { motion } from "framer-motion";
 import { useSectionInview } from "@/library/customHooks";
 export default function About() {
-    const ref = useSectionInview({ thres: 0.8, sectionTag: "#about" });
+    const { ref } = useSectionInview({ thres: 0.8, sectionTag: "#about" });
     return (
         <motion.main
             ref={ref}

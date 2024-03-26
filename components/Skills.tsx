@@ -1,8 +1,8 @@
 "use client";
-import { skillsData } from "@/library/data";
+import {skillsData} from "@/library/data";
 import Section_headers from "@/components/Section_headers";
-import { useSectionInview } from "@/library/customHooks";
-import { motion } from "framer-motion";
+import {useSectionInview} from "@/library/customHooks";
+import {motion} from "framer-motion";
 const framerAnimations = {
     kaka: {
         opacity: 0,
@@ -15,7 +15,7 @@ const framerAnimations = {
 };
 
 export default function Skills() {
-    const ref = useSectionInview({ thres: 0.9, sectionTag: "#skills" });
+    const {ref} = useSectionInview({thres: 0.9, sectionTag: "#skills"});
     // const [ref, inView] = useInView({
     //     threshold: 0.9,
     // });
@@ -24,7 +24,7 @@ export default function Skills() {
     //     if (inView && Date.now() - timeOfLastClick > 1000) setActiveState("#skills");
     // }, [inView, setActiveState, timeOfLastClick]);
     return (
-        <main id="skills" className="scroll-mt-36" ref={ref}>
+        <main id="skills" className="scroll-mt-36 mb-28 sm:mb-0" ref={ref}>
             <Section_headers>Skills</Section_headers>
             <ul className="flex flex-wrap items-center justify-center max-w-4xl gap-7">
                 {skillsData.map((item, index) => (

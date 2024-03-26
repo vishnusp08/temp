@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ActiveStateContext from "@/context/activeContext";
 const inter = Inter({ subsets: ["latin"] });
-
+import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
     title: "Prajwal | Portfolio",
     description: "About me",
@@ -19,8 +19,9 @@ export default function RootLayout({
             {/* this scroll smooth adds a smooth scrolling when the in page url is accessed using the id */}
             {/*the exlamation mark forces the property to be overriden in tailwind utility classes*/}
             <body className={`${inter.className} relative bg-slate-50 sm:pt-[10rem] pt-[7rem]`}>
-                <div className="-z-10 bg-green-100 blur-[30rem] full w-[55rem] h-[35rem] rounded-full absolute top-[2rem] left-[16rem] "></div>
-                <div className="-z-10 bg-purple-100 w-[55rem] blur-[30rem] h-[35rem] rounded-full right-[15rem] absolute top-[6rem]"></div>
+                <div className="-z-10 bg-green-100 blur-[30rem] full w-[55rem] h-[35rem] rounded-full absolute top-[2rem] left-[18rem] "></div>
+                <div className="-z-10 bg-purple-100 w-[55rem] blur-[30rem] h-[35rem] rounded-full right-[12rem] absolute top-[6rem]"></div>
+                <Toaster />
                 <ActiveStateContext children={children} />
             </body>
         </html>

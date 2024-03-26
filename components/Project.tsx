@@ -1,14 +1,14 @@
 "use client";
 import Section_headers from "./Section_headers";
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import Project from "./ProjectIndividual";
-import { projectsData } from "@/library/data";
-import { useSectionInview } from "@/library/customHooks";
+import {projectsData} from "@/library/data";
+import {useSectionInview} from "@/library/customHooks";
 export default function Projects() {
     // const {setActiveState, timeOfLastClick} = ContextData();
     // the error i was getting here was : Property 'setActiveState' does not exist on type 'ActiveSectionContextType | null'. (tsserver 2339)
     // so the both of those context passed values can have the value of null hence i have to put a case for that null case.
-    const ref = useSectionInview({ thres: 0.47, sectionTag: "#projects" });
+    const {ref} = useSectionInview({thres: 0.47, sectionTag: "#projects"});
     // const [ref, inView] = useInView({
     //     threshold: 0.47,
     // });

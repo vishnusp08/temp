@@ -8,8 +8,10 @@ import myImage from "@/public/Untitled.jpeg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useSectionInview } from "@/library/customHooks";
+import { ContextData } from "@/context/activeContext";
 export default function Intro() {
-    const ref = useSectionInview({ thres: 0.4, sectionTag: "#home" });
+    const { ref } = useSectionInview({ thres: 0.4, sectionTag: "#home" });
+    const { setTheTime, setActiveState } = ContextData();
     return (
         <main
             className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28 scroll-mt-36" //When you navigate to a specific element on a page using a URL fragment (e.g., #section2), the browser scrolls the target element to the top of the viewport. However, if there's a fixed header or you want to add some space between the top of the viewport and the target element, you can use scroll-margin-top to achieve this.
@@ -68,7 +70,14 @@ export default function Intro() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.125 }}
             >
-                <Link href="#contact" className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-white bg-gray-900 rounded-full shadow-lg sm:w-auto gap-3 hover:scale-110 active:scale-105 transition ease-in-out whitespace-nowrap">
+                <Link
+                    href="#contact"
+                    className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-white bg-gray-900 rounded-full shadow-lg sm:w-auto gap-3 hover:scale-110 active:scale-105 transition ease-in-out whitespace-nowrap"
+                    onClick={() => {
+                        setTheTime(Date.now());
+                        setActiveState("#contact");
+                    }}
+                >
                     <div>Contact me</div>
                     <MdContactMail className="text-2xl " />
                 </Link>

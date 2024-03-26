@@ -26,7 +26,7 @@ export default function Project({ title, description, tags, image, URL }: Projec
             className={`cursor-pointer hover:bg-gray-200 group relative flex h-[22rem] sm:h-[20rem] w-full bg-slate-100 p-3 overflow-hidden rounded-lg sm:mb-6 mb-8 border border-black/5 last:mb-0`}
         >
             <section className="flex flex-col w-full sm:w-1/2 h-full pt-4 group-odd:pl-4  sm:group-even:ml-[22rem] pb-7 ">
-                <span className="mb-5 text-2xl font-semibold">{title}</span>
+                <span className="mb-5 text-2xl underline font-semibold">{title}</span>
                 <span className="mb-10 text-gray-700">{description}</span>
                 <ul className="flex flex-wrap items-center mt-auto gap-3">
                     {tags.map((item, index) => (

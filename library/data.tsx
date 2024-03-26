@@ -1,12 +1,12 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import {FaReact} from "react-icons/fa";
+import {LuGraduationCap} from "react-icons/lu";
 import Resource from "@/public/Resource.png";
 import Realtor from "@/public/Realtor.png";
 import Estate from "@/public/MERN_RE.png";
 import Cart from "@/public/Cart.png";
-import { LuSchool2 } from "react-icons/lu";
-import { TbCertificate } from "react-icons/tb";
+import {LuSchool2} from "react-icons/lu";
+import {TbCertificate} from "react-icons/tb";
 
 export const links = [
     {
@@ -59,7 +59,7 @@ export const experiencesData = [
     },
     {
         title: "Full stack developer",
-        location: "",
+        location: "Bengaluru",
         description: "Learning and building projects of full stack applications",
         icon: React.createElement(FaReact),
         date: "2022-present",
@@ -77,7 +77,7 @@ export const projectsData = [
     {
         title: "Realtor clone",
         description: "This is a realtor clone that is a house listing website.",
-        tags: ["React", "Tailwind", "Firebase"],
+        tags: ["React", "Tailwind", "Firebase", "Firestore"],
         image: Realtor,
         URL: "https://website-clone-chi.vercel.app/",
     },
@@ -89,7 +89,7 @@ export const projectsData = [
         URL: "https://redux-toolkit-cart-sigma.vercel.app/",
     },
     {
-        title: "AI Powered Resource Management System",
+        title: "AI Powered RMS",
         description: "A resource Management website that integrates AI into it.",
         tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
         image: Resource,
@@ -97,4 +97,4 @@ export const projectsData = [
     },
 ] as const;
 
-export const skillsData = ["TypeScript", "Java", "React", "Next.js", "Node.js", "Git", "Tailwind", "MongoDB", "Redux", "Express", "PostgreSQL", "Framer Motion", "Unix", "Bash", "JDBC"] as const;
+export const skillsData = ["TypeScript", "Java", "React", "Next.js", "Node.js", "Git", "Tailwind", "MongoDB", "Redux", "Express", "PostgreSQL", "Framer Motion", "Unix", "Bash", "JDBC", "Firebase", "Firestore"] as const;

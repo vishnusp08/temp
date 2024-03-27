@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeContext from "@/context/themeContext";
 import ThemeSwitcher from "@/components/Theme_switcher";
+import {SpeedInsights} from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
     title: "Prajwal | Portfolio",
     description: "About me",
@@ -25,6 +26,7 @@ export default function RootLayout({
             <body className={`${inter.className} relative bg-slate-50 text-black dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-85 sm:pt-[10rem] pt-[7rem]`}>
                 <div className="-z-10 bg-green-100 dark:bg-green-900 blur-[30rem] w-[30rem] -left-[20rem] sm:w-[55rem] h-[35rem] rounded-full absolute top-[2rem] sm:left-[-15rem] md:left-[-10rem] lg:left-[-5rem] xl:left-[20rem]"></div>
                 <div className="-z-10 bg-purple-100 dark:bg-[#49063f] dark:blur-[100rem] w-[30rem] sm:w-[55rem] blur-[30rem] h-[35rem] rounded-full right-[12rem] absolute top-[6rem]"></div>
+                <SpeedInsights />
                 <ThemeContext>
                     <ActiveStateContext>
                         <Toaster />

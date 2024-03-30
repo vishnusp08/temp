@@ -11,7 +11,7 @@ export default function Header() {
         <motion.header
             className="dark:bg-gray-950 dark:text-gray-50 bg-opacity-80 backdrop-blur-[0.5rem] shadow-lg fixed left-1/2 sm:top-[2rem]  text-sm top-0 sm:w-[40rem] bg-white w-full sm:rounded-full z-[100] dark:bg-opacity-70"
             initial={{ y: -110, x: "-50%", opacity: 0 }}
-            animate={{ y: 3, x: "-50%", opacity: 1 }}
+            animate={{ y: 0, x: "-50%", opacity: 1 }}
         >
             <ul className="flex flex-wrap items-center sm:justify-between justify-center w-full h-auto px-1 py-1 font-semibold transition-all box-border">
                 {links.map((item) => (

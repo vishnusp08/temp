@@ -72,7 +72,7 @@ export const projectsData = [
         description: "A Real Estate website where people can find there home. I worked on this full-stack project for 3 months.",
         tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
         image: Estate,
-        URL: "https://estate-lake.vercel.app/",
+        URL: "https://github.com/Prajwalg19/estate",
     },
     {
         title: "Realtor clone",

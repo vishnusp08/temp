@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
-import { MdContactMail } from "react-icons/md";
-import { IoMdDownload } from "react-icons/io";
+import {MdContactMail} from "react-icons/md";
+import {IoMdDownload} from "react-icons/io";
 // import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import {FaGithub} from "react-icons/fa";
+import {SiLeetcode} from "react-icons/si";
 import myImage from "@/public/My_photo.jpeg";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import Link from "next/link";
-import { useSectionInview } from "@/library/customHooks";
-import { ContextData } from "@/context/activeContext";
+import {useSectionInview} from "@/library/customHooks";
+import {ContextData} from "@/context/activeContext";
 export default function Intro() {
-    const { ref } = useSectionInview({ thres: 0.4, sectionTag: "#home" });
-    const { setTheTime, setActiveState } = ContextData();
+    const {ref} = useSectionInview({thres: 0.4, sectionTag: "#home"});
+    const {setTheTime, setActiveState} = ContextData();
     return (
         <main
             className="flex flex-col items-center text-center sm:mb-0 gap-[3rem] sm:gap-[4rem] mb-28 scroll-mt-36" //When you navigate to a specific element on a page using a URL fragment (e.g., #section2), the browser scrolls the target element to the top of the viewport. However, if there's a fixed header or you want to add some space between the top of the viewport and the target element, you can use scroll-margin-top to achieve this.
@@ -22,8 +22,8 @@ export default function Intro() {
             {/*parent container*/}
             <motion.section // child  1
                 className="relative"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{opacity: 0, scale: 0}}
+                animate={{opacity: 1, scale: 1}}
                 transition={{
                     type: "tween", //this is the boucy effect of the component. Tween doesn't bounce but just renders smoothly,think of it like opposite ot spring effect
                     duration: 0.2,
@@ -38,8 +38,8 @@ export default function Intro() {
                 />
                 <motion.span
                     className="absolute bottom-0 right-0 text-2xl"
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{opacity: 0, scale: 0}}
+                    animate={{opacity: 1, scale: 1}}
                     transition={{
                         type: "spring",
                         stiffness: 130, //as the name says the stiffness  effect can be seen
@@ -52,8 +52,8 @@ export default function Intro() {
             </motion.section>
             <motion.h1 // child 2
                 className="flex flex-col items-center text-2xl sm:text-4xl !leading-[2.5rem]"
-                initial={{ y: 40, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                initial={{y: 40, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
             >
                 <span>
                     Hi, I&apos;m <b>Prajwal</b>. I&apos;m a <b>Computer science undergraduate</b>.
@@ -67,9 +67,9 @@ export default function Intro() {
             </motion.h1>
             <motion.section //child 3
                 className="flex flex-col items-center w-full text-center smw-auto sm:justify-center sm:flex-row gap-6"
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.125 }}
+                initial={{y: 100, opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{delay: 0.125}}
             >
                 <Link
                     href="#contact"
@@ -85,9 +85,9 @@ export default function Intro() {
 
                 <a
                     className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap dark:bg-opacity-30 dark:backdrop-blur-[0.5rem] dark:text-gray-200"
-                    href="/prajwalgowdag.pdf"
+                    href="/Prajwal_Gowda_Resume.pdf"
                     download={true} // downloads the file instead of just opening the file in the window
-                    // the slash "/" in nextjs just points to the public directory as it is generally used to store static files
+                // the slash "/" in nextjs just points to the public directory as it is generally used to store static files
                 >
                     <div>Download Resume</div>
                     <IoMdDownload className="text-2xl opacity-60 group-hover:translate-y-1 transition " />

@@ -67,19 +67,19 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+     {
+        title: "Realtor clone",
+        description: "This is a realtor clone that is a house listing website.",
+        tags: ["React", "Tailwind", "Firebase", "Firestore"],
+        image: Realtor,
+        URL: "https://website-clone-chi.vercel.app/",
+    },
     {
         title: "Mern Estate Website",
         description: "A Real Estate website where people can find there home. I worked on this full-stack project for 3 months.",
         tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
         image: Estate,
         URL: "https://github.com/Prajwalg19/estate",
-    },
-    {
-        title: "Realtor clone",
-        description: "This is a realtor clone that is a house listing website.",
-        tags: ["React", "Tailwind", "Firebase", "Firestore"],
-        image: Realtor,
-        URL: "https://website-clone-chi.vercel.app/",
     },
     {
         title: "Checkout cart",

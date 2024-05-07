@@ -26,7 +26,7 @@ export const links = [
         hash: "#skills",
     },
     {
-        name: "Experience",
+        name: "Education",
         hash: "#experience",
     },
     {
@@ -68,20 +68,20 @@ export const experiencesData = [
 
 export const projectsData = [
      {
-        title: "Realtor clone",
-        description: "This is a realtor clone that is a house listing website.",
+        title: "Mern Estate Website",
+        description: "A Real Estate website where people can find their home and make posts to rent, sell their houses.",
+        tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
+        image: Estate,
+        URL: "https://estate-website-a6u4.onrender.com/",
+    },
+    {
+        title: "House listing website",
+        description: "A house listing website to list and find homes with geo-maps integration.",
         tags: ["React", "Tailwind", "Firebase", "Firestore"],
         image: Realtor,
         URL: "https://website-clone-chi.vercel.app/",
     },
-    {
-        title: "Mern Estate Website",
-        description: "A Real Estate website where people can find there home. I worked on this full-stack project for 3 months.",
-        tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
-        image: Estate,
-        URL: "https://github.com/Prajwalg19/estate",
-    },
-    {
+   {
         title: "Checkout cart",
         description: "Checkout cart page implemented using redux toolkit",
         tags: ["React", "Redux Toolkit", "Tailwind"],
@@ -90,7 +90,7 @@ export const projectsData = [
     },
     {
         title: "AI Powered RMS",
-        description: "A resource Management website that integrates AI into it.",
+        description: "A resource Management website that integrates AI models for easing out the process.",
         tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
         image: Resource,
         URL: "https://github.com/Prajwalg19/project/tree/backup",

@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import ThemeContext from "@/context/themeContext";
 import ThemeSwitcher from "@/components/Theme_switcher";
 import {SpeedInsights} from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
     title: "Prajwal | Portfolio",
     description: "About me",
@@ -32,6 +33,7 @@ export default function RootLayout({
                         <Toaster />
                         <Header />
                         {children}
+                                <Analytics />
                         <ThemeSwitcher />
                         <Footer />
                     </ActiveStateContext>

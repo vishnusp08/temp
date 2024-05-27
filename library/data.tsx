@@ -72,7 +72,7 @@ export const projectsData = [
         description: "A Real Estate website where people can find their home and make posts to rent, sell their houses.",
         tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
         image: Estate,
-        URL: "https://estate-website-a6u4.onrender.com/",
+        URL: "https://findmyhome-frontend.vercel.app/",
     },
     {
         title: "House listing website",

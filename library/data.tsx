@@ -7,6 +7,7 @@ import Estate from "@/public/MERN_RE.png";
 import Cart from "@/public/Cart.png";
 import {LuSchool2} from "react-icons/lu";
 import {TbCertificate} from "react-icons/tb";
+import Birdy from "@/public/Birdy.png";
 
 export const links = [
     {
@@ -70,16 +71,30 @@ export const projectsData = [
      {
         title: "Mern Estate Website",
         description: "A Real Estate website where people can find their home and make posts to rent, sell their houses.",
-        tags: ["React", "Express", "MongoDB", "Tailwind", "Node", "Redux Toolkit"],
+        tags: ["React", "Express", "MongoDB", "Tailwind", "Node.js", "Redux Toolkit"],
         image: Estate,
-        URL: "https://findmyhome-frontend.vercel.app/",
+        URL: "https://github.com/Prajwalg19/estate/",
+    },
+      {
+        title: "Birdy",
+        description: "A Social media app for friends and family to post and interact with each other.",
+        tags: ["React","MongoDB", "Node.js","Tailwind", "Firebase", "Express"],
+        image: Birdy,
+        URL: "https://github.com/Prajwalg19/Birdy",
     },
     {
         title: "House listing website",
-        description: "A house listing website to list and find homes with geo-maps integration.",
+        description: "A feature-rich house listing web app developed with React, Firebase and Firestore for efficient data storage and management.",
         tags: ["React", "Tailwind", "Firebase", "Firestore"],
         image: Realtor,
-        URL: "https://website-clone-chi.vercel.app/",
+        URL: "https://github.com/Prajwalg19/House-listing-website",
+    },
+      {
+        title: "AI Powered RMS",
+        description: "A resource Management website that integrates AI models for easing out the process.",
+        tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
+        image: Resource,
+        URL: "https://github.com/Prajwalg19/project/tree/backup",
     },
    {
         title: "Checkout cart",
@@ -88,13 +103,7 @@ export const projectsData = [
         image: Cart,
         URL: "https://redux-toolkit-cart-sigma.vercel.app/",
     },
-    {
-        title: "AI Powered RMS",
-        description: "A resource Management website that integrates AI models for easing out the process.",
-        tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
-        image: Resource,
-        URL: "https://github.com/Prajwalg19/project/tree/backup",
-    },
+  
 ] as const;
 
-export const skillsData = ["TypeScript", "Java", "React", "Next.js", "Node.js", "Git", "Tailwind", "MongoDB", "Redux", "Express", "PostgreSQL", "Framer Motion", "Unix", "Bash", "JDBC", "Firebase", "Firestore"] as const;
+export const skillsData = ["TypeScript", "Java", "React", "Next.js", "Node.js", "Git", "Tailwind", "MongoDB", "Redux", "Express", "PostgreSQL", "Framer Motion", "Unix", "Bash", "Firebase", "Firestore"] as const;

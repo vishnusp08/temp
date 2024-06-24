@@ -4,7 +4,7 @@ import {LuGraduationCap} from "react-icons/lu";
 import Resource from "@/public/Resource.png";
 import Realtor from "@/public/Realtor.png";
 import Estate from "@/public/MERN_RE.png";
-import Cart from "@/public/Cart.png";
+import Figma from "@/public/Figma.png";
 import {LuSchool2} from "react-icons/lu";
 import {TbCertificate} from "react-icons/tb";
 import Birdy from "@/public/Birdy.png";
@@ -97,11 +97,11 @@ export const projectsData = [
         URL: "https://github.com/Prajwalg19/project/tree/backup",
     },
    {
-        title: "Checkout cart",
-        description: "Checkout cart page implemented using redux toolkit",
-        tags: ["React", "Redux Toolkit", "Tailwind"],
-        image: Cart,
-        URL: "https://redux-toolkit-cart-sigma.vercel.app/",
+        title: "Figma design",
+        description: "A figma design cloned using NextJS and Tailwind",
+        tags: ["NextJS", "Tailwind", "Framer-motion"],
+        image: Figma,
+        URL: "https://matrix-eight-rose.vercel.app/",
     },
   
 ] as const;

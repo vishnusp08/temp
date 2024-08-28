@@ -4,10 +4,12 @@ import {LuGraduationCap} from "react-icons/lu";
 import Resource from "@/public/Resource.png";
 import Realtor from "@/public/Realtor.png";
 import Estate from "@/public/MERN_RE.png";
+import MovieFinder from "@/public/MovieFinder.png";
 //import Figma from "@/public/Figma.png";
 import {LuSchool2} from "react-icons/lu";
 import {TbCertificate} from "react-icons/tb";
 import Birdy from "@/public/Birdy.png";
+import BlogSpace from "@/public/BlogSpace.png";
 
 export const links = [
     {
@@ -90,6 +92,20 @@ export const projectsData = [
         URL: "https://github.com/Prajwalg19/House-listing-website",
     },
       {
+        title: "Movie Finder",
+        description: "Find your favorite movie's plot, ratings, cast and more",
+        tags: ["React","Nodejs", "MongoDB", "Tailwind", "Redux Toolkit"],
+        image: MovieFinder,
+        URL: "https://github.com/Prajwalg19/movieFinder",
+    },
+     {
+        title: "Blog Space",
+        description: "Share your knowledge and experiences by writing blogs and articles",
+        tags: ["React", "ExpressJs","Nodejs", "MongoDB", "Tailwind"],
+        image: BlogSpace,
+        URL: "https://github.com/Prajwalg19/project_blog",
+    },
+      {
         title: "AI Powered RMS",
         description: "A resource Management website that integrates AI models for easing out the process.",
         tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
@@ -106,4 +122,4 @@ export const projectsData = [
   
 ] as const;
 
-export const skillsData = ["TypeScript", "Java", "React", "Next.js", "Node.js", "Git", "Tailwind", "MongoDB", "Redux", "Express", "PostgreSQL", "Framer Motion", "Unix", "Bash", "Firebase", "Firestore"] as const;
+export const skillsData = ["TypeScript", "React", "Next.js", "Node.js", "Git", "Tailwind","MongoDB", "Redux", "Express", "PostgreSQL","Docker","Framer Motion", "Unix", "Bash", "Firebase", "Firestore" ,"Java"] as const;

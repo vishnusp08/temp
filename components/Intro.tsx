@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {MdContactMail} from "react-icons/md";
 import {IoMdDownload} from "react-icons/io";
-// import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import myImage from "@/public/My_photo.jpg";
 import {motion} from "framer-motion";
@@ -98,8 +98,8 @@ export default function Intro() {
                     // </a>
                 }
 
-                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 backdrop-blur-[0.5rem] bg-opacity-30 " href="https://github.com/vishnusp08" target="_blank">
-                    <FaGithub className="text-2xl dark:text-white" />
+                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 backdrop-blur-[0.5rem] bg-opacity-30 " href="https://www.linkedin.com/in/vishnu-sp-48524127b/" target="_blank">
+                    <FaLinkedin className="text-2xl dark:text-white" />
                 </a>
             </motion.section>
         </main>

@@ -11,7 +11,7 @@ import ThemeSwitcher from "@/components/Theme_switcher";
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
-    title: "Prajwal | Portfolio",
+    title: "Vishnu | Portfolio",
     description: "About me",
 };
 

@@ -36,32 +36,28 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "St. Johns High School",
+        title: "VVS Sardar Patel High School",
         location: "Bengaluru, Karnataka, India",
-        description: "I completed my secondary schooling with a percentage of 92",
+        description: "I completed my secondary schooling with a percentage of 83.5% ",
         icon: React.createElement(LuSchool2),
-        date: "2018-2020",
+        date: "2017-2018",
     },
     {
-        title: "Mangalore PU college",
+        title: "Vidya Mandir IND. PU College",
         location: "Bengaluru, Karnataka, India",
-        description: "I completed my pre-university with a percentage of 88",
+        description: "I completed my pre-university with a percentage of 72.16%",
         icon: React.createElement(TbCertificate),
         date: "2018-2020",
     },
     {
         title: "Global Academy of Technology",
         location: "Bengaluru, Karnataka, India",
-        description: "Currently pursuing my Computer Science Engineering degree",
+        description: "I completed my Computer Science Engineering degree with a CGPA of 7.3",
         icon: React.createElement(LuGraduationCap),
         date: "2020-2024",
     },
     {
-        title: "Full stack developer",
-        location: "Bengaluru",
-        description: "Learning and building projects of full stack applications",
-        icon: React.createElement(FaReact),
-        date: "2022-present",
+        
     },
 ] as const;
 

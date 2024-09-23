@@ -70,18 +70,6 @@ export default function Intro() {
                 animate={{y: 0, opacity: 1}}
                 transition={{delay: 0.125}}
             >
-                <Link
-                    href="#contact"
-                    className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-white bg-gray-900 rounded-full shadow-lg sm:w-auto gap-3 hover:scale-110 active:scale-105 transition ease-in-out whitespace-nowrap"
-                    onClick={() => {
-                        setTheTime(Date.now());
-                        setActiveState("#contact");
-                    }}
-                >
-                    <div>Contact me</div>
-                    <MdContactMail className="text-2xl " />
-                </Link>
-
                 <a
                     className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap dark:bg-opacity-30 dark:backdrop-blur-[0.5rem] dark:text-gray-200"
                     href="/My_resume.pdf"

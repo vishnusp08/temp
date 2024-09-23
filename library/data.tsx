@@ -56,9 +56,7 @@ export const experiencesData = [
         icon: React.createElement(LuGraduationCap),
         date: "2020-2024",
     },
-    {
-        
-    },
+    
 ] as const;
 
 export const projectsData = [

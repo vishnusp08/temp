@@ -84,7 +84,7 @@ export default function Intro() {
 
                 <a
                     className="flex items-center justify-center w-3/4 px-8 py-3 text-lg font-semibold text-black bg-white border rounded-full shadow-lg cursor-pointer sm:w-auto border-black/10 group gap-3 active:scale-105 transition hover:scale-110 whitespace-nowrap dark:bg-opacity-30 dark:backdrop-blur-[0.5rem] dark:text-gray-200"
-                    href="/Prajwal_Gowda_Resume.pdf"
+                    href="/My_resume.pdf"
                     download={true} // downloads the file instead of just opening the file in the window
                 // the slash "/" in nextjs just points to the public directory as it is generally used to store static files
                 >

@@ -16,7 +16,7 @@ export default function About() {
             <Section_headers>About Me</Section_headers>
             <section className="text-lg text-center leading-8">
                 <p>
-                    Hey there! I&apos;m <strong>Prajwal</strong>, a passionate CS undergraduate and a <strong>full stack developer</strong>. I have a knack for building robust and scalable web applications using modern technologies. With a keen interest in problem-solving, I thrive on challenges and love
+                    Hey there! I&apos;m <strong>Vishnu S P</strong>, a passionate CS undergraduate and a <strong>full stack developer</strong>. I have a knack for building robust and scalable web applications using modern technologies. With a keen interest in problem-solving, I thrive on challenges and love
                     to tackle complex problems.
                 </p>
 

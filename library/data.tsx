@@ -70,56 +70,20 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-     {
-        title: "Mern Estate Website",
-        description: "A Real Estate website where people can find their home and make posts to rent, sell their houses.",
-        tags: ["React", "Express", "MongoDB", "Tailwind", "Node.js", "Redux Toolkit"],
-        image: Estate,
-        URL: "https://github.com/Prajwalg19/estate/",
-    },
-      {
-        title: "Birdy",
-        description: "A Social media app for friends and family to post and interact with each other.",
-        tags: ["React","MongoDB", "Node.js","Tailwind", "Firebase", "Express"],
-        image: Birdy,
-        URL: "https://github.com/Prajwalg19/Birdy",
-    },
     {
         title: "House listing website",
         description: "A feature-rich house listing web app developed with React, Firebase and Firestore for efficient data storage and management.",
         tags: ["React", "Tailwind", "Firebase", "Firestore"],
         image: Realtor,
-        URL: "https://github.com/Prajwalg19/House-listing-website",
+        URL: "https://website-clone-chi.vercel.app/",
     },
       {
         title: "Movie Finder",
         description: "Find your favorite movie's plot, ratings, cast and more",
         tags: ["React","Nodejs", "MongoDB", "Tailwind", "Redux Toolkit"],
         image: MovieFinder,
-        URL: "https://github.com/Prajwalg19/movieFinder",
-    },
-     {
-        title: "Blog Space",
-        description: "Share your knowledge and experiences by writing blogs and articles",
-        tags: ["React", "ExpressJs","Nodejs", "MongoDB", "Tailwind"],
-        image: BlogSpace,
-        URL: "https://github.com/Prajwalg19/project_blog",
-    },
-      {
-        title: "AI Powered RMS",
-        description: "A resource Management website that integrates AI models for easing out the process.",
-        tags: ["React", "Redux", "DBSqlite", "Tailwind", "Redux Toolkit"],
-        image: Resource,
-        URL: "https://github.com/Prajwalg19/project/tree/backup",
-    },
-  // {
-   //     title: "Figma design",
-    //    description: "A figma design cloned using NextJS and Tailwind",
-    //    tags: ["NextJS", "Tailwind", "Framer-motion"],
-     //   image: Figma,
-    //    URL: "https://matrix-eight-rose.vercel.app/",
-   // },
-  
+        URL: "https://movie-finder-lyart.vercel.app/",
+    }, 
 ] as const;
 
-export const skillsData = ["TypeScript", "React", "Next.js", "Node.js", "Git", "Tailwind","MongoDB", "Redux", "Express", "PostgreSQL","Docker","Framer Motion", "Unix", "Bash", "Firebase", "Firestore" ,"Java"] as const;
+export const skillsData = ["React", "Node.js", "Git","MongoDB", "Express", "SQL","Framer Motion", "Bash" ,"Java"] as const;

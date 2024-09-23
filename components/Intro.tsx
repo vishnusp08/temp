@@ -4,8 +4,7 @@ import {MdContactMail} from "react-icons/md";
 import {IoMdDownload} from "react-icons/io";
 // import { FaLinkedin } from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
-import {SiLeetcode} from "react-icons/si";
-import myImage from "@/public/My_photo.jpeg";
+import myImage from "@/public/My_photo.jpg";
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {useSectionInview} from "@/library/customHooks";
@@ -56,7 +55,7 @@ export default function Intro() {
                 animate={{y: 0, opacity: 1}}
             >
                 <span>
-                    Hi, I&apos;m <b>Prajwal</b>. I&apos;m a <b>Computer science undergraduate</b>.
+                    Hi, I&apos;m <b>Vishnu</b>. I&apos;m a <b>Computer science undergraduate</b>.
                 </span>
                 <p>
                     I love to program in <b>Java </b>&amp; <b>TypeScript</b>. <br></br>My stack is{" "}
@@ -99,15 +98,8 @@ export default function Intro() {
                     // </a>
                 }
 
-                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 backdrop-blur-[0.5rem] bg-opacity-30 " href="https://github.com/Prajwalg19" target="_blank">
+                <a className="p-3 bg-white border flex items-center justify-center sm:w-auto w-3/4 rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 backdrop-blur-[0.5rem] bg-opacity-30 " href="https://github.com/vishnusp08" target="_blank">
                     <FaGithub className="text-2xl dark:text-white" />
-                </a>
-                <a
-                    className="w-3/4  flex items-center justify-center sm:w-auto p-3  bg-white border rounded-full shadow-lg hover:scale-110 sm:hover:scale-[1.15] active:scale-105 transition border-black/10 dark:bg-white/[.25] backdrop-blur-[0.5]"
-                    href="https://leetcode.com/theimperical8/"
-                    target="_blank"
-                >
-                    <SiLeetcode className="text-2xl " />
                 </a>
             </motion.section>
         </main>

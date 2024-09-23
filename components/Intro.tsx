@@ -30,7 +30,7 @@ export default function Intro() {
             >
                 <Image //it is the nextjs component that is better than the traditional img tag
                     src={myImage}
-                    alt="Prajwal Gowda G"
+                    alt="Vishnu SP"
                     quality="95"
                     priority={true}
                     className="w-24 h-24 border-[0.2rem] object-cover rounded-full border-violet-800 shadow-lg"

@@ -76,4 +76,4 @@ export const projectsData = [
     }, 
 ] as const;
 
-export const skillsData = ["React", "Node.js", "Git","MongoDB", "CSS", "SQL","Java"] as const;
+export const skillsData = ["SQL","Html","CSS", "JavaScript","python" , "tableau","Mongodb","React", "Git"] as const

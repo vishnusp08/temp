@@ -16,15 +16,15 @@ export default function About() {
             <Section_headers>About Me</Section_headers>
             <section className="text-lg text-center leading-8">
                 <p>
-                    I&apos;m <strong>Vishnu</strong>, i am a<strong>Computer Science undergraduate</strong>. I have keen interest  in AIML and Web applications</p>
+                    I&apos;m <strong>Vishnu</strong>, i am a<strong>Computer Science undergraduate</strong>.</p>
                 <p>
                     <strong>My Tech Stack:</strong>
-                    <br /> <em>Favorite Languages:</em> <strong>Java</strong>
+                    <br /> <em>Favorite Languages:</em> <strong>Python</strong>
                 </p>
 
                 <p>
-                    <strong>Why I Love What I Do:</strong>
-                    <br />I like building AIML projects.
+                    <strong></strong>
+                    <br />
                 </p>
             </section>
         </motion.main>

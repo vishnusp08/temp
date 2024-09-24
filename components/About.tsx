@@ -16,20 +16,15 @@ export default function About() {
             <Section_headers>About Me</Section_headers>
             <section className="text-lg text-center leading-8">
                 <p>
-                    Hey there! I&apos;m <strong>Vishnu S P</strong> i am <strong>Computer Science</strong>. I have a knack for building robust and scalable web applications using modern technologies. With a keen interest in problem-solving, I thrive on challenges and love
-                    to tackle complex problems.
-                </p>
-
+                    I&apos;m <strong>Vishnu</strong>, i am a<strong>Computer Science undergraduate</strong>. I have keen interest  in AIML and Web applications</p>
                 <p>
                     <strong>My Tech Stack:</strong>
-                    <br /> <em>Favorite Languages:</em> <strong>Java</strong> and <strong>TypeScript</strong>
-                    <br /> <em>Editor of Choice:</em> <strong>Neovim</strong>
-                    <br /> <em>Core Stack:</em> <strong>Next.js</strong>, <strong>React</strong>, <strong>MongoDB</strong>, <strong>Node.js</strong>, and <strong>TailwindCSS</strong>
+                    <br /> <em>Favorite Languages:</em> <strong>Java</strong>
                 </p>
 
                 <p>
                     <strong>Why I Love What I Do:</strong>
-                    <br />I am deeply passionate about technology and its potential to shape the world. Whether it&apos;s creating intuitive user interfaces or designing efficient backend systems, I find joy in every step of the development process.
+                    <br />I like building AIML projects.
                 </p>
             </section>
         </motion.main>

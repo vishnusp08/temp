@@ -2,7 +2,7 @@
 import Image from "next/image";
 import {MdContactMail} from "react-icons/md";
 import {IoMdDownload} from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
+import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import myImage from "@/public/My_photo.jpg";
 import {motion} from "framer-motion";
@@ -58,9 +58,7 @@ export default function Intro() {
                     Hi, I&apos;m <b>Vishnu</b>. I&apos;m a <b>Computer science undergraduate</b>.
                 </span>
                 <p>
-                    I love to program in <b>Java </b>&amp; <b>TypeScript</b>. <br></br>My stack is{" "}
-                    <i>
-                        <b>MERN(Next.js)</b>
+                    I love to program in <b>Java </b>. <br></br>My interest is{" "} <i> <b>AIML</b>
                     </i>
                 </p>
             </motion.h1>

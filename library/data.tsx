@@ -63,17 +63,17 @@ export const projectsData = [
     {
         title: "House listing website",
         description: "A feature-rich house listing web app developed with React, Firebase and Firestore for efficient data storage and management.",
-        tags: ["React", "Tailwind", "Firebase", "Firestore"],
+        tags: ["React", "HTML", "Bootstrap", "Firestore"],
         image: Realtor,
         URL: "https://website-clone-chi.vercel.app/",
     },
       {
         title: "Movie Finder",
         description: "Find your favorite movie's plot, ratings, cast and more",
-        tags: ["React","Nodejs", "MongoDB", "Tailwind", "Redux Toolkit"],
+        tags: ["React","Nodejs", "MongoDB", "SQL", "Java"],
         image: MovieFinder,
         URL: "https://movie-finder-lyart.vercel.app/",
     }, 
 ] as const;
 
-export const skillsData = ["React", "Node.js", "Git","MongoDB", "Express", "SQL","Framer Motion", "Bash" ,"Java"] as const;
+export const skillsData = ["React", "Node.js", "Git","MongoDB", "CSS", "SQL", "Bash" ,"Java"] as const;
